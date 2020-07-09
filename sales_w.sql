@@ -25,6 +25,7 @@ select
      ,c.customer_id 
      ,t.order_id
      ,t.order_date
+	 ,e.emp_id
 from 
      stg_sales_w s
      left outer join
@@ -34,6 +35,8 @@ from
      on (s.address=c.address)
      left outer join time_dimension t
      on (s.order_id=t.order_id)
+	 left outer join emp_dimension e
+	 on(s.department=e.department)
 );	
 
 
