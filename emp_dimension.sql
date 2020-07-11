@@ -53,3 +53,5 @@ into emp_dimension(emp_name,title,department,region) values('bala','nurse','BSC'
 into emp_dimension(emp_name,title,department,region) values('duraigopal','doctor','MBBS','east')
 into emp_dimension(emp_name,title,department,region) values('kani','doctor','MBBS','south')
 select * from dual
+
+select * from mp_dimension;

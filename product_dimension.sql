@@ -1,33 +1,51 @@
 create  table product_dimension
 (
-     product_id number primary key 
+     product_id number 
      ,product_name varchar2(70)
      ,product_category varchar2(50)
      ,unit_price number
 );
 
+--we have create sequence 
+create sequence s1234
+start with 1
 
+
+
+
+-we can use for trigger 
+create or replace trigger trgproduct
+before insert on product_dimension
+for each row
+when (new.product_id is null)
+begin 
+select s1234.nextval into :new.product_id 
+from dual;
+end;
+/
 
 
 insert all
-into product_dimension values(1,'lenovo','mobile',1000)
-into product_dimension values(2,'lenovo','charger',250)
-into product_dimension values(3,'lenovo','laptop',12000)
-into product_dimension values(4,'lenovo','ipod',7500)
-into product_dimension values(5,'dell','laptop',25000)
-into product_dimension values(6,'dell','desktop',12400)
-into product_dimension values(7,'dell','ipod',18200)
-into product_dimension values(8,'samsung','mobile',25000)
-into product_dimension values(9,'samsung','pendrive',150)
-into product_dimension values(10,'samsung','headset',2500)
-into product_dimension values(11,'samsung','laptop',25000)
-into product_dimension values(12,'hp','laptop',45000)
-into product_dimension values(13,'hp','desktop',2500)
-into product_dimension values(14,'nokia','mobile',1500)
-into product_dimension values(15,'nokia','battery',300)
-into product_dimension values(16,'nokia','headset',2500)
-into product_dimension values(17,'nokia','wireless',3500)
-into product_dimension values(18,'apple','mobile',75000)
-into product_dimension values(19,'apple','ipod',84000)
-into product_dimension values(20,'apple','laptop',95000)
+into product_dimension(product_name,product_category,unit_price) values('lenovo','mobile',1000)
+into product_dimension(product_name,product_category,unit_price) values('lenovo','charger',250)
+into product_dimension(product_name,product_category,unit_price) values('lenovo','laptop',12000)
+into product_dimension(product_name,product_category,unit_price) values('lenovo','ipod',7500)
+into product_dimension(product_name,product_category,unit_price) values('dell','laptop',25000)
+into product_dimension(product_name,product_category,unit_price) values('dell','desktop',12400)
+into product_dimension(product_name,product_category,unit_price) values('dell','ipod',18200)
+into product_dimension(product_name,product_category,unit_price) values('samsung','mobile',25000)
+into product_dimension(product_name,product_category,unit_price) values('samsung','pendrive',150)
+into product_dimension(product_name,product_category,unit_price) values('samsung','headset',2500)
+into product_dimension(product_name,product_category,unit_price) values('samsung','laptop',25000)
+into product_dimension(product_name,product_category,unit_price) values('hp','laptop',45000)
+into product_dimension(product_name,product_category,unit_price) values('hp','desktop',2500)
+into product_dimension(product_name,product_category,unit_price) values('nokia','mobile',1500)
+into product_dimension(product_name,product_category,unit_price) values('nokia','battery',300)
+into product_dimension(product_name,product_category,unit_price) values('nokia','headset',2500)
+into product_dimension(product_name,product_category,unit_price) values('nokia','wireless',3500)
+into product_dimension(product_name,product_category,unit_price) values('apple','mobile',75000)
+into product_dimension(product_name,product_category,unit_price) values('apple','ipod',84000)
+into product_dimension(product_name,product_category,unit_price) values('apple','laptop',95000)
 select * from dual;
+
+

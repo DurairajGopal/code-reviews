@@ -17,7 +17,7 @@ create table sales
 delete from sales where order_date  between '08-jun-2020' and '14-jun-2020'
 
 
---again i can do insert one week record to sales 
+--again i can do insert one week record to sales
 
 
 insert into sales s

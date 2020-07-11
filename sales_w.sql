@@ -8,6 +8,7 @@ create table sales_w
      ,customer_id number
 	 ,order_id number
 	 ,order_date date
+	 ,emp_id number
 );
 
 
