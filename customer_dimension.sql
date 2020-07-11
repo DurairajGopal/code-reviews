@@ -1,11 +1,11 @@
 create table customer_dimension
 (
-     customer_id int not null
+     customer_id int
      ,customer_name varchar2(50)
      ,address varchar2(50)
      ,city varchar2(50)
      ,zip number
-     ,primary key(customer_id)
+     
 );
 
 
