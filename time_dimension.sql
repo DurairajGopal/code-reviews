@@ -5,12 +5,12 @@ create table time_dimension
 )
 
 
-we have create sequence 
+---we have create in sequence 
 create sequence s123
 start with 10
 increment by 10
 
-
+--i need to create for trigger
 create or replace trigger trg
 before insert on time_dimension
 for each row 
@@ -22,28 +22,17 @@ end;
 /
 
 
-insert all
-into time_dimension(order_date) values('01-jun-2020')
-into time_dimension(order_date) values('01-jun-2020')
-into time_dimension(order_date) values('02-jun-2020')
-into time_dimension(order_date) values('03-jun-2020')
-into time_dimension(order_date) values('03-jun-2020')
-into time_dimension(order_date) values('04-jun-2020')
-into time_dimension(order_date) values('05-jun-2020')
-into time_dimension(order_date) values('05-jun-2020')
-into time_dimension(order_date) values('06-jun-2020')
-into time_dimension(order_date) values('07-jun-2020')
-into time_dimension(order_date) values('08-jun-2020')
-into time_dimension(order_date) values('08-jun-2020')
-into time_dimension(order_date) values('09-jun-2020')
-into time_dimension(order_date) values('10-jun-2020')
-into time_dimension(order_date) values('11-jun-2020')
-into time_dimension(order_date) values('12-jun-2020')
-into time_dimension(order_date) values('12-jun-2020')
-into time_dimension(order_date) values('13-jun-2020')
-into time_dimension(order_date) values('14-jun-2020')
-into time_dimension(order_date) values('14-jun-2020')
-select * from dual
+insert into time_dimension t
+(
+     t.order_date 
+)
+select 	 
+     st.order_date 
+from 	 
+     stg_sales_w st;
+
+
+
 
 
 

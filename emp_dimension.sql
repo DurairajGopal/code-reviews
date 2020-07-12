@@ -30,28 +30,19 @@ end;
 /
 
 
+insert into emp_dimension e
+(
+     e.emp_name
+	 ,e.title
+	 ,e.department
+	 ,e.region
+)	 
+select 
+     st.emp_name
+     ,st.title
+     ,st.department
+     ,st.region
+from 
+	 stg_sales_w st;
+	 
 
-insert all
-into emp_dimension(emp_name,title,department,region) values('shan','BA','IT','west')
-into emp_dimension(emp_name,title,department,region) values('kani','Developer','IT','west')
-into emp_dimension(emp_name,title,department,region) values('sarwan','Developer','IT','east')
-into emp_dimension(emp_name,title,department,region) values('durai','Support','IT','east')
-into emp_dimension(emp_name,title,department,region) values('bala','teaching','chemistry','west')
-into emp_dimension(emp_name,title,department,region) values('sathesh','RND','chemistry','south')
-into emp_dimension(emp_name,title,department,region) values('shan','scientist','chemistry','central')
-into emp_dimension(emp_name,title,department,region) values('sathesh','production','Mech',	'west')
-into emp_dimension(emp_name,title,department,region) values('ram','quality','mech','south')
-into emp_dimension(emp_name,title,department,region) values('sarwan','Testing','Mech','central')
-into emp_dimension(emp_name,title,department,region) values('gopal','audit','CA','central')
-into emp_dimension(emp_name,title,department,region) values('tamil','finance','CA','west')
-into emp_dimension(emp_name,title,department,region) values('shantanu','finance','CA','south')
-into emp_dimension(emp_name,title,department,region) values('bala','manager','IT','south')
-into emp_dimension(emp_name,title,department,region) values('dinesh','HR','IT','east')
-into emp_dimension(emp_name,title,department,region) values('rithika','HR','IT','east')
-into emp_dimension(emp_name,title,department,region) values('jegan','technician','ITI','south')
-into emp_dimension(emp_name,title,department,region) values('bala','nurse','BSC','south')
-into emp_dimension(emp_name,title,department,region) values('duraigopal','doctor','MBBS','east')
-into emp_dimension(emp_name,title,department,region) values('kani','doctor','MBBS','south')
-select * from dual
-
-select * from mp_dimension;

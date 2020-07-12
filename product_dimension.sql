@@ -7,13 +7,15 @@ create  table product_dimension
 );
 
 --we have create sequence 
+
 create sequence s1234
 start with 1
+increment by 1;
 
 
 
+--we can use for trigger 
 
--we can use for trigger 
 create or replace trigger trgproduct
 before insert on product_dimension
 for each row
@@ -24,28 +26,19 @@ from dual;
 end;
 /
 
+insert into product_dimension p
+(
+     p.product_name
+	 ,p.product_category
+	 ,p.unit_price 
+)
+select 
+	 st.product_name
+	 ,st.product_category 
+	 ,st.unit_price
+from 
+	 stg_sales_w st;
 
-insert all
-into product_dimension(product_name,product_category,unit_price) values('lenovo','mobile',1000)
-into product_dimension(product_name,product_category,unit_price) values('lenovo','charger',250)
-into product_dimension(product_name,product_category,unit_price) values('lenovo','laptop',12000)
-into product_dimension(product_name,product_category,unit_price) values('lenovo','ipod',7500)
-into product_dimension(product_name,product_category,unit_price) values('dell','laptop',25000)
-into product_dimension(product_name,product_category,unit_price) values('dell','desktop',12400)
-into product_dimension(product_name,product_category,unit_price) values('dell','ipod',18200)
-into product_dimension(product_name,product_category,unit_price) values('samsung','mobile',25000)
-into product_dimension(product_name,product_category,unit_price) values('samsung','pendrive',150)
-into product_dimension(product_name,product_category,unit_price) values('samsung','headset',2500)
-into product_dimension(product_name,product_category,unit_price) values('samsung','laptop',25000)
-into product_dimension(product_name,product_category,unit_price) values('hp','laptop',45000)
-into product_dimension(product_name,product_category,unit_price) values('hp','desktop',2500)
-into product_dimension(product_name,product_category,unit_price) values('nokia','mobile',1500)
-into product_dimension(product_name,product_category,unit_price) values('nokia','battery',300)
-into product_dimension(product_name,product_category,unit_price) values('nokia','headset',2500)
-into product_dimension(product_name,product_category,unit_price) values('nokia','wireless',3500)
-into product_dimension(product_name,product_category,unit_price) values('apple','mobile',75000)
-into product_dimension(product_name,product_category,unit_price) values('apple','ipod',84000)
-into product_dimension(product_name,product_category,unit_price) values('apple','laptop',95000)
-select * from dual;
+
 
 
