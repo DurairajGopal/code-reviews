@@ -42,5 +42,8 @@ into stg_sales_w  values('apple',1,0.20,'u','8/78 sarwan nager','chennai',626217
 select * from dual;
 
 
+select * from stg_sales_w;
+
+
 
 
