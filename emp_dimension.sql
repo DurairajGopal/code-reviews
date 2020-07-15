@@ -11,12 +11,12 @@ create table emp_dimension
 -----------
 create sequence s1
 start with 5
-increment by 5
+increment by 5;
 
 
 --if possible workaround use for row level trigger
 
-we have attached the below link 
+--we have attached the below link  for reference 
 https://stackoverflow.com/questions/28523262/multiple-insert-sql-oracle
 
 create or replace trigger trg1

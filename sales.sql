@@ -8,12 +8,19 @@ create table sales
 	 ,order_id number
 	 ,order_date date
 	 ,emp_id number
-);
+)
+partition by list (order_date)
+(
+partition p1 values ('01-jun-2020','02-jun-2020','03-jun-2020','04-jun-2020','05-jun-2020',
+'06-jun-2020','07-jun-2020'),
+partition p2 values ('08-jun-2020','09-jun-2020','10-jun-2020','11-jun-2020',
+'12-jun-2020','13-jun-2020','14-jun-2020');
 
---i have create table sales within 20 record.
+I have create table sales within 20 record.
 
 
 --i can do delete one week record  from sales 
+
 delete from sales where order_date  between '08-jun-2020' and '14-jun-2020'
 
 
@@ -61,7 +68,7 @@ select * from sales
 
 
 /*
-we have use for my puropose pl ignore it.
+we have use for my puropose please ignore it.
 insert into sales 
 select
 s.quantity,

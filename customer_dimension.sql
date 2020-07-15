@@ -39,7 +39,7 @@ select
      ,st.address
      ,st.city
      ,st.zip
-from stg_sales_w st; 
+from stg_sales_w st;
 
 
 

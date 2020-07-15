@@ -6,11 +6,13 @@ create table time_dimension
 
 
 ---we have create in sequence 
+
 create sequence s123
 start with 10
 increment by 10
 
 --i need to create for trigger
+
 create or replace trigger trg
 before insert on time_dimension
 for each row 
@@ -30,7 +32,6 @@ select
      st.order_date 
 from 	 
      stg_sales_w st;
-
 
 
 

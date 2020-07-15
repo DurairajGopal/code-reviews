@@ -43,4 +43,4 @@ from
 
  
 
-select * from sales_w
+select * from sales_w;
