@@ -59,7 +59,7 @@ from
  
 
 
-select * from sales
+select * from sales;
 
 
 

@@ -14,7 +14,7 @@ start with 5
 increment by 5;
 
 
---if possible workaround use for row level trigger
+--If possible workaround use for row level trigger
 
 --we have attached the below link  for reference 
 https://stackoverflow.com/questions/28523262/multiple-insert-sql-oracle

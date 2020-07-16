@@ -6,7 +6,7 @@ create  table product_dimension
      ,unit_price number
 );
 
---I  have create sequence
+--I  have a create sequence
 
 create sequence s1234
 start with 1

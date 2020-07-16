@@ -39,10 +39,22 @@ into stg_sales_w  values('nokia',5,0.02,'r','78/659 shan st','chennai',217525,17
 into stg_sales_w  values('apple',2,0.1,'s','3/78 kanishka st','musiri',626175,180,'13-jun-2020','bala','nurse','BSC','south','mobile',75000)
 into stg_sales_w  values('apple',1,0.03,'t','6/78 bala nager','musiri',654235,190,'14-jun-2020','duraigopal','doctor','MBBS','east','ipod',84000)
 into stg_sales_w  values('apple',1,0.20,'u','8/78 sarwan nager','chennai',626217,200,'14-jun-2020','kani','doctor','MBBS','south','laptop',95000)
+into stg_sales_w  values('apple',2,0.3,'v','1/78 sai nager','trichy',234541,210,'15-jun-2020','bala','doctor','MS','east','phone',23000)
+into stg_sales_w  values('hcl',3,0.1,'w','23/54 ks street','musiri',321545,220,'16-jun-2020','tamil','hr','MBA','west','headset',2500)
+into stg_sales_w  values('hcl',2,0.4,'x','7/58 baba nager','chennai',354654,230,'17-jun-2020','bala','HR','BSC','west','battery',250)
+into stg_sales_w  values('hcl',3,0.022,'y','7/4 ganapthy flat','chennai',234564,240,'18-jun-2020','shan','doctor','MBBS','central','bettery',1520)
+into stg_sales_w  values('hcl',5,1.2,'z','287/2 kovil st','cmbt',248754,250,'19-jun-2020','sarwan','professional','MCA','south','keypad',1500)
+into stg_sales_w  values('one plus',1,0.4,'aa','257/2 abstan st','trichy',247801,260,'20-jun-2020','ram','professional','MCA','west','phone',2500)
+into stg_sales_w  values('one plus',2,0.4,'bb','87/7 bhai nager','kovai',124011,270,'21-jun-2020','sathesh','professional','MCA','north','laptop',24800)
+into stg_sales_w  values('one plus',3,1.5,'cc','128 thribai st','chennai',748510,280,'22-jun-2020','gopi','quality','mech','central','ipod',21032)
+into stg_sales_w  values('mahindra',2,0.2,'dd','14-45 dbs st','kovai',780012,290,'23-jun-2020','bala','production','mech','east','tracter',250000)
+into stg_sales_w  values('mahindra',7,0.785,'ee','74/8 thiru st','chennai',547522,300,'24-jun-2020','shan','inspection','mech','west','tiny tracter',15000)
+into stg_sales_w  values('mahindra',21,0.0023,'ff','120/9 bala nager','chennai',258458,310,'25-jun-2020','dinesh','manager','mech','north','tipper',254045)
 select * from dual;
 
-I have table with data.
 select * from stg_sales_w;
+
+
 
 
 

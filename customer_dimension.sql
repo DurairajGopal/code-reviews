@@ -9,13 +9,13 @@ create table customer_dimension
 );
 
 
---we have created in sequence 
+--I have created in sequence 
 
 create sequence s145
 start with 100
 increment by 1;
 
---we need use for trigger
+--I need to use for trigger
 
 create or replace trigger trg12
 before insert on customer_dimension
