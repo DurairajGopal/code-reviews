@@ -39,6 +39,8 @@ select
 from 
 	 stg_sales_w st;
 
+select * from product_dimension;
+
 
 
 

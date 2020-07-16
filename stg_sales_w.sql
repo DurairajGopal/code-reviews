@@ -41,7 +41,7 @@ into stg_sales_w  values('apple',1,0.03,'t','6/78 bala nager','musiri',654235,19
 into stg_sales_w  values('apple',1,0.20,'u','8/78 sarwan nager','chennai',626217,200,'14-jun-2020','kani','doctor','MBBS','south','laptop',95000)
 select * from dual;
 
-
+I have table with data.
 select * from stg_sales_w;
 
 
