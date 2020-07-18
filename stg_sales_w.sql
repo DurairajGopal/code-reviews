@@ -17,7 +17,6 @@ create table stg_sales_w
 	 ,unit_price number
 );
 
-
 insert all
 into stg_sales_w  values('lenovo',3,0.2,'a','1/71 thiru nager','trichy',621217,10,'01-jun-2020','shan','BA','IT','west','mobile',1000)
 into stg_sales_w  values('lenovo',2,0.3,'b','1/72 murgu nager','trichy',626212,20,'01-jun-2020','kani','Developer','IT','west','charger',250)
@@ -50,6 +49,15 @@ into stg_sales_w  values('one plus',3,1.5,'cc','128 thribai st','chennai',748510
 into stg_sales_w  values('mahindra',2,0.2,'dd','14-45 dbs st','kovai',780012,290,'23-jun-2020','bala','production','mech','east','tracter',250000)
 into stg_sales_w  values('mahindra',7,0.785,'ee','74/8 thiru st','chennai',547522,300,'24-jun-2020','shan','inspection','mech','west','tiny tracter',15000)
 into stg_sales_w  values('mahindra',21,0.0023,'ff','120/9 bala nager','chennai',258458,310,'25-jun-2020','dinesh','manager','mech','north','tipper',254045)
+into stg_sales_w  values('tcs',12,0.1,'gg','14/752 thiru st','trichy',245254,320,'26-jun-2020','bala','manager','mech','north','steel',15000)
+into stg_sales_w  values('tcs',100,1.5,'hh','24/75 sb st','musiri',245822,330,'27-jun-2020','sathesh','salesman','mech','east','retail',15000)
+into stg_sales_w  values('tcs',10000,2.5,'II','275/3 st bala','trichy',698789,340,'28-jun-2020','shan','IT','cse','central','Laptop',125000)
+into stg_sales_w  values('tcs',250,0.3,'JJ','12-78 shantanu nager','chennai',987000,350,'29-jun-2020','bala','Rnd','bsc','east','mobile',24000)
+into stg_sales_w  values('samsung',12,3.5,'KK','45/8 babay nager','trichy',875042,360,'30-jun-2020','tamil','drdo','mech','central','ipod',15000)
+into stg_sales_w  values('hcl',1,0.23,'LL','12/3 kanishka st','kovai',100120,370,'01-jul-2020','jegan','doctor','mbbs','east','battery',1500)
+into stg_sales_w  values('ebay',13,0.12,'MM','78/3 babay st','chennai',102301,380,'02-jul-2020','dinesh','finance','CA','south','laptop',25000)
+into stg_sales_w  values('ebay',2,1.2,'NN','98/2 kriti st','chennai',102121,390,'03-jul-2020','shantanu','finance','CA','west','keypad',150)
+into stg_sales_w  values('ebay',33,1.5,'OO','3/4 bala st','trichy',325041,400,'04-jul-2020','shan','doctor','MBBS','west','mobile',15000)
 select * from dual;
 
 select * from stg_sales_w;
