@@ -5,7 +5,7 @@ create table time_dimension
 )
 
 
----I  have create in sequence 
+---I  have a create in sequence 
 
 create sequence s123
 start with 10
