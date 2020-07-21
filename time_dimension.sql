@@ -8,8 +8,8 @@ create table time_dimension
 ---I  have a create in sequence 
 
 create sequence s123
-start with 10
-increment by 10;
+     start with 10
+     increment by 10;
 
 --I need to create for trigger
 

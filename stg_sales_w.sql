@@ -58,8 +58,16 @@ into stg_sales_w  values('hcl',1,0.23,'LL','12/3 kanishka st','kovai',100120,370
 into stg_sales_w  values('ebay',13,0.12,'MM','78/3 babay st','chennai',102301,380,'02-jul-2020','dinesh','finance','CA','south','laptop',25000)
 into stg_sales_w  values('ebay',2,1.2,'NN','98/2 kriti st','chennai',102121,390,'03-jul-2020','shantanu','finance','CA','west','keypad',150)
 into stg_sales_w  values('ebay',33,1.5,'OO','3/4 bala st','trichy',325041,400,'04-jul-2020','shan','doctor','MBBS','west','mobile',15000)
-select * from dual;
-
+into stg_sales_w  values('lenovo',10,0.3,'PP','23/45 sb st','chennai',235421,410,'04-jul-2020','shan','doctor','MBBS','south','mobile',25000)
+into stg_sales_w  values('dell',125,0.03,'QQ','23/45 sb st','chennai',855555,420,'05-jul-2020','diensh','finance','ca','central','laptop',125000)
+into stg_sales_w  values('dell',20,0.3,'RR','7/2 ff st','musiri',582545,430,'06-jul-2020','jegan','finance','ca','east','wireless',2500)
+into stg_sales_w  values('dell',3,4.5,'WW','7/8 gt st','kovai',234758,440,'07-jul-2020','bala','manager','mech','south','battery',200)
+into stg_sales_w  values('nokia',80,3.5,'XX','87/7 sm st','madurai',120012,450,'08-jul-2020','bala','production','mech','east','laptop',4500)
+into stg_sales_w  values('nokia',45,0.21,'YY','98/5 mam nager','musiri',123450,460,'08-jul-2020','shan','doctor','MS','central','ipod',45000)
+into stg_sales_w  values('apple',10,0.3,'ZZ','25/5 mamce nager','trichy',100057,470,'09-jul-2020','gopi','hr','MBA','east','desktop',2500)
+into stg_sales_w  values('apple',20,0.001,'ps','54/8 man st','kovai',522520,480,'09-jul-2020','ram','professional','MCA','east','keypad',1500)
+into stg_sales_w  values('apple',2,0.02,'gh','78/2 bas nager','mumbai',540558,490,'10-jul-2020','tamil','hr','Mba','east','south','phone',25000)
+into stg_sales_w  values('one plus',1,0.4,'aa','257/2 abstan st','trichy',247801,500,'10-jul-2020','ram','professional','MCA','west','phone',2500)
 select * from stg_sales_w;
 
 

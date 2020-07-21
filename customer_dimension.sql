@@ -12,8 +12,8 @@ create table customer_dimension
 --I have created in sequence 
 
 create sequence s145
-start with 100
-increment by 1;
+     start with 100
+     increment by 1;
 
 --I need to use for trigger
 

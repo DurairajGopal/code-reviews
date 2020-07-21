@@ -9,12 +9,12 @@ create  table product_dimension
 --I  have a create sequence
 
 create sequence s1234
-start with 1
-increment by 1;
+     start with 1
+     increment by 1;
 
 
 
---I need to user for trigger.
+--I need to user for trigger;
 
 create or replace trigger trgproduct
 before insert on product_dimension
